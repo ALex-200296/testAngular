@@ -1,0 +1,32 @@
+<section class="section__addpost">
+  <div class="container addpost__container">
+    <h1 class="section__addpost__title">
+      Добавить Запись
+    </h1>
+    <input
+    type="text"
+    class="section__addpost__input"
+    placeholder="заголовок записей"
+    [(ngModel)]="title"
+    >
+    <textarea
+    cols="30"
+    rows="20"
+    class="section__addpost__textarea"
+    placeholder="описание записей"
+    [(ngModel)]="text"
+    ></textarea>
+    <div class="section__addpost__subBtn">
+      <button class="btn section__addpost__btn" routerLink="/">
+        Назад
+      </button>
+      <button
+        [style.backgroundColor]="error ? 'red' : '#8AB5EC'"
+        class="btn subBtn__add"
+        (click)="addPost()"
+        >
+        Добавить
+      </button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+<section class="section__post">
+  <div class="container post__container">
+    <div>
+      <button class="btn section__post__btn" routerLink="/">
+        Назад
+      </button>
+    </div>
+    <h1 class="section__post__title">
+      Изменить Запись
+    </h1>
+    <input
+    type="text"
+    class="section__post__input"
+    placeholder="заголовок записей"
+    [(ngModel)]="post.title"
+    >
+    <textarea
+    cols="30"
+    rows="20"
+    class="section__post__textarea"
+    placeholder="описание записей"
+    [(ngModel)]="post.text"
+    ></textarea>
+    <div class="section__post__subBtn">
+      <button class="btn subBtn__reset" (click)="resetPost()">
+        Удалить
+      </button>
+      <button class="btn subBtn__save" (click)="updatePost()">
+        Сохранить
+      </button>
+    </div>
+  </div>
+</section>

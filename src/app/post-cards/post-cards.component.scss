@@ -1,0 +1,29 @@
+.section__posts {
+  margin: 20px 0;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.section__posts__container {
+  padding: 50px;
+  min-height: 700px;
+  text-align: center;
+  border: 1px solid #000000;
+  background-color: #F0F0F0;
+}
+
+.section__posts__btn {
+  float: right;
+  min-width: 120px;
+  padding: 10px 15px;
+}
+
+.section__posts__list {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}

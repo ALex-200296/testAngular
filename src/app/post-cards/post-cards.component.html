@@ -1,0 +1,12 @@
+<div class="section section__posts">
+  <div class="container section__posts__container">
+    <h1 class="section__posts__title">Блог</h1>
+    <button class="btn section__posts__btn" (click)="addPostPage()"> + Добавить</button>
+    <ul class="section__posts__list">
+      <app-card
+      *ngFor="let post of AppService.posts"
+      [post]="post"
+      ></app-card>
+    </ul>
+  </div>
+</div>
